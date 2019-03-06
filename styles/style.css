@@ -6,7 +6,6 @@
 }
 
 body {
-	box-sizing: border-box;
 	font-family: Lato, ﻿Arial, sans-serif;
 	font-size: 16px;
 	-webkit-box-sizing: border-box;
@@ -106,7 +105,6 @@ body {
 	right: 30px;
 }
 
-/*todo *hexagon* */
 main {
 	margin: 152px 0 0 0 ;
 	display: flex;
@@ -166,53 +164,53 @@ main {
 }
 
 .hex-image-1 {
-	background-image: url("../assets/images/Layer 33.png");
+	background-image: url("../assets/images/portfolio/Layer 33.png");
 }
 
 .hex-image-2 {
-	background-image: url("../assets/images/Layer 31.png");
+	background-image: url("../assets/images/portfolio/Layer 31.png");
 }
 
 .hex-image-3 {
-	background-image: url("../assets/images/Layer 34.png");
+	background-image: url("../assets/images/portfolio/Layer 34.png");
 }
 .hex-image-4 {
-	background-image: url("../assets/images/Layer 35.png");
+	background-image: url("../assets/images/portfolio/Layer 35.png");
 }
 
 .hex-image-5 {
-	background-image: url("../assets/images/Layer 36.png");
+	background-image: url("../assets/images/portfolio/Layer 36.png");
 }
 
 .hex-image-6 {
-	background-image: url("../assets/images/Layer 44.png");
+	background-image: url("../assets/images/portfolio/Layer 44.png");
 }
 
 .hex-image-7 {
-	background-image: url("../assets/images/Layer 37.png");
+	background-image: url("../assets/images/portfolio/Layer 37.png");
 }
 
 .hex-image-8 {
-	background-image: url("../assets/images/Layer 38.png");
+	background-image: url("../assets/images/portfolio/Layer 38.png");
 }
 
 .hex-image-9 {
-	background-image: url("../assets/images/Layer 39.png");
+	background-image: url("../assets/images/portfolio/Layer 39.png");
 }
 
 .hex-image-10 {
-	background-image: url("../assets/images/Layer 40.png");
+	background-image: url("../assets/images/portfolio/Layer 40.png");
 }
 
 .hex-image-11 {
-	background-image: url("../assets/images/Layer 41.png");
+	background-image: url("../assets/images/portfolio/Layer 41.png");
 }
 .hex-image-12 {
-	background-image: url("../assets/images/Layer 42.png");
+	background-image: url("../assets/images/portfolio/Layer 43.png");
 }
 
 .hex-image-13 {
-	background-image: url("../assets/images/Layer 43.png");
+	background-image: url("../assets/images/portfolio/Layer 42.png");
 }
 
 .vertical__separator1, .vertical__separator2{
@@ -238,7 +236,7 @@ main {
 	flex-flow: row nowrap;
 	justify-content: start;
 	position: relative;
-	top: 0;
+	top: -27px;
 	float: left;
 	left: -453px;
 }
@@ -256,22 +254,100 @@ main {
 .separator {
 	border: 1px solid #e4e9eb;
 	width: calc(100% - 60px);
+	margin: -27px 0 11px 0;
 }
 
+.info {
+	background: #2eb398;
+	width: 100%;
+}
 
-/*todo -- info*/
+.wrapper {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	padding: 67px 0;
+}
+
+.article {
+	width: 581px;
+	margin-top: -6px;
+}
+
+.article h2 {
+	font-size: 1.9rem;
+	font-weight: normal;
+	color: rgba(215, 252, 245, 255);
+	margin: 0 0 8px 0;
+}
+
+.article h3{
+	font-size: 1.3rem;
+	font-weight: normal;
+	color: rgba(32, 129, 109, 255);
+	margin: 0 0 19px 0;
+	letter-spacing: -0.08rem;
+}
+
+.hex-image-person {
+	background-image: url("../assets/images/person.png");
+}
+
+.person {
+	margin-right: 19px;
+}
+
 .subtitle {
-	color: red;
-	background: lightblue;
+	color: rgba(215, 252, 245, 255);;
+	margin: 0 0 40px 0;
+	font-size: 0.8rem;
+	text-align: justify;
+	line-height: 20px;
 }
 
-.image {
-	width: 200px;
-	position: absolute;
+.social__networks {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-end;
 }
 
-.subtitle span {
-	margin: 10px;
+.social__networks a:hover {
+	filter: contrast(10%);
+}
+.social__image-1 {
+	background-image: url("../assets/images/social/iconmonstr-facebook-2.svg");
+	height: 24px;
+	width: 24px;
+}
+
+.social__image-2 {
+	background-image: url("../assets/images/social/iconmonstr-twitter-2.svg");
+	height: 24px;
+	width: 24px;
+}
+
+.social__image-3 {
+	background-image: url("../assets/images/social/iconmonstr-google-plus-2.svg");
+	height: 24px;
+	width: 24px;
+}
+
+.social__image-4 {
+	background-image: url("../assets/images/social/iconmonstr-pinterest-2.svg");
+	height: 24px;
+	width: 24px;
+}
+
+.social__image-5 {
+	background-image: url("../assets/images/social/iconmonstr-linkedin-2.svg");
+	height: 24px;
+	width: 24px;
+}
+
+.social__image-6 {
+	background-image: url("../assets/images/social/iconmonstr-dribbble-2.svg");
+	height: 24px;
+	width: 24px;
 }
 
 input:invalid {
