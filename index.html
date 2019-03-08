@@ -27,14 +27,19 @@
     </div>
   </nav>
   <!--TODO --SEP -->
-  <div class="item1"></div>
-  <div class="item2"></div>
+  <div class="separator --left"></div>
+  <div class="separator --right"></div>
 </header>
 
 <main>
-  <section class="hexagon-container" id="portfolio">
-    <div class="row row-native">
-      <div class="vertical__separator1"></div>
+  <section class="hexagon__container" id="portfolio">
+    <div class="row row__native">
+
+
+      <div class="separator__vertical separator__vertical__left"></div>
+
+
+
       <div class="hexagon">
         <div class="hex-layer-1">
           <div class="hex-layer-2 hex-image-1"></div>
@@ -55,7 +60,14 @@
           <div class="hex-layer-2 hex-image-4"></div>
         </div>
       </div>
-      <div class="vertical__separator2"></div>
+
+
+
+      <div class="separator__vertical separator__vertical__right"></div>
+
+
+
+
     </div>
     <div class="row row-translate">
       <div class="hexagon">
@@ -84,8 +96,12 @@
         </div>
       </div>
     </div>
-    <div class="row row-native">
-      <div class="vertical__separator1"></div>
+
+
+    <div class="row row__native">
+
+      <div class="separator__vertical separator__vertical__left"></div>
+
       <div class="hexagon">
         <div class="hex-layer-1">
           <div class="hex-layer-2 hex-image-10"></div>
@@ -106,10 +122,10 @@
           <div class="hex-layer-2 hex-image-13"></div>
         </div>
       </div>
-      <div class="vertical__separator2"></div>
+      <div class="separator__vertical separator__vertical__right"></div>
     </div>
   </section>
-  <section class="dots">
+  <section class="dots" id="about" >
     <a></a>
     <a></a>
     <a></a>
@@ -117,9 +133,10 @@
     <a></a>
     <a></a>
   </section>
-  <section class="separator"></section>
 
-  <section class="info" id="about">
+  <section class="separator --portfolio"></section>
+
+  <section class="info"   >
     <div class="wrapper">
       <div class="hexagon person">
         <div class="hex-layer-1">
@@ -158,23 +175,41 @@
 
   </section>
 
-  <section class="separator --black"></section>
+  <section class="separator --info"></section>
 
 </main>
 
 
 <footer class="footer" id="footer">
-  <form class="in-touch-form" action="#" method="POST">
-    <fieldset>
-      <legend>Get   in Touch</legend>
-      <input class="input-text" type="text" placeholder="Name (Required)" required>
-      <input class="input-email" type="email" placeholder="Email (Required)">
-      <input class="input-paswd" type="password" placeholder="Subject">
-      <textarea class="textarea-" name="#" id="#" cols="30" rows="10"
-                placeholder="Write your message here..."></textarea>
-    </fieldset>
-    <button class="button-submit" type="submit">send</button>
-  </form>
+  <div class="wrapper1">
+    <form class="footer__form" action="#" method="POST">
+      <fieldset class="fieldset">
+        <legend>Get   in Touch</legend>
+        <p>In order to get in touch use the contact form below:</p>
+        <input class="input__name --style" type="text" placeholder="Name (Required)" required>
+        <input class="input__email --style" type="email" placeholder="Email (Required)" required>
+        <input class="input__paswd --style" type="password" placeholder="Subject">
+        <textarea class="textarea --style --textarea" name="#" id="#" cols="5" rows="5"
+                  placeholder="Write your message here..."></textarea>
+      </fieldset>
+      <button class="button__submit" type="submit">send</button>
+    </form>
+
+    <section class="form__information">
+      <p><b>Quisque Hendrerit:</b> dolor sit amet, consectetur adipisicing elit. Architecto asperiores cum doloremque et facere iure laudantium magni nemo provident quas quis quisquam.</p>
+      <ul class="form__information__address">
+        <li class="location">Elm St. 14/05 LostCity</li>
+        <li class="phone">+3528 331 86 35</li>
+        <li class="email">info@hexalcorp.com</li>
+      </ul>
+    </section>
+  </div>
+
+  <section class="separator --footer"></section>
+
+  <section class="copyright">
+    <p>@ Copyright 2013 by PSDChat</p>
+  </section>
 </footer>
 </body>
 </html>
