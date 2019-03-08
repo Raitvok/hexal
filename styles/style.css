@@ -24,7 +24,7 @@ body {
 	width:      100%;
 }
 
-.header-ceo {
+.header__ceo {
 	color:         #323232;
 	font-family:   arial, sans-serif;
 	font-size:     0;
@@ -34,7 +34,7 @@ body {
 	user-select:   none;
 }
 
-.triangle {
+.triangle__background {
 	position:     absolute;
 	top:          63px;
 	left:         50%;
@@ -53,7 +53,7 @@ body {
 	left:     3px;
 }
 
-.navigation {
+.header__navigation {
 	display:         flex;
 	flex-flow:       row nowrap;
 	justify-content: center;
@@ -62,55 +62,41 @@ body {
 	text-transform:  uppercase;
 }
 
-.navigation ul {
+.header__navigation ul {
 	padding: 0 0 10px 0;
 	margin:  0;
 }
 
-.navigation li {
+.header__navigation li {
 	user-select:     none;
 	list-style-type: none;
 	float:           left;
 }
 
-.navigation ul li:nth-child(2) {
+.header__navigation ul li:nth-child(2) {
 	color:  gray;
 	margin: 0 10px;
 }
 
-.navigation li a {
+.header__navigation li a {
 	color:           #FFFFFF;
 	text-decoration: none;
 	font-weight:     bold;
 }
 
-.navigation li a:hover {
+.header__navigation li a:hover {
 	color: #308976;
 }
 
-.item1, .item2 {
-	position:      absolute;
-	top:           74px;
-	border-bottom: 1px solid #e4e9eb;
-	width:         calc(50% - 120px);
-}
-
-.item1 {
-	float: left;
-	left:  30px;
-}
-
-.item2 {
-	float: right;
-	right: 30px;
-}
-
 main {
-	margin:          152px 0 0 0;
 	display:         flex;
 	flex-flow:       column nowrap;
 	justify-content: center;
 	align-items:     center;
+}
+
+#portfolio{
+	padding: 152px 0 0 0;
 }
 
 .hexagon-container {
@@ -218,24 +204,6 @@ main {
 	background-image: url("../assets/images/portfolio/Layer 42.png");
 }
 
-.vertical__separator1, .vertical__separator2 {
-	border:    1px solid #e4e9eb;
-	transform: rotate(90deg);
-	width:     104px;
-	position:  absolute;
-	top:       104px;
-}
-
-.vertical__separator1 {
-	float: left;
-	left:  -64px;
-}
-
-.vertical__separator2 {
-	float: right;
-	right: 148px;
-}
-
 .dots {
 	height:          100%;
 	display:         flex;
@@ -256,12 +224,6 @@ main {
 
 .dots a:hover {
 	background: #8b8784;
-}
-
-.separator {
-	border: 1px solid #e4e9eb;
-	width:  calc(100% - 60px);
-	margin: -27px 0 11px 0;
 }
 
 .info {
@@ -362,3 +324,49 @@ input:invalid {
 	border: 2px solid red;
 }
 
+/*TODO --SEPARATORS refactoring here-*/
+
+.item1, .item2 {
+	position:      absolute;
+	top:           74px;
+	border-bottom: 1px solid #e4e9eb;
+	width:         calc(50% - 120px);
+}
+
+.item1 {
+	float: left;
+	left:  30px;
+}
+
+.item2 {
+	float: right;
+	right: 30px;
+}
+
+.vertical__separator1, .vertical__separator2 {
+	border:    1px solid #e4e9eb;
+	transform: rotate(90deg);
+	width:     104px;
+	position:  absolute;
+	top:       104px;
+}
+
+.vertical__separator1 {
+	float: left;
+	left:  -64px;
+}
+
+.vertical__separator2 {
+	float: right;
+	right: 148px;
+}
+
+.separator {
+	border: 1px solid #e4e9eb;
+	width:  calc(100% - 60px);
+	margin: -27px 0 11px 0;
+}
+
+.separator.--black {
+	border-color: #2b2b2b;
+}
