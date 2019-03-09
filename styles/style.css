@@ -6,10 +6,8 @@
 }
 
 body {
-	font-family:        Lato, ﻿Arial, sans-serif;
+	font-family:        Arial, sans-serif;
 	font-size:          16px;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing:    border-box;
 	box-sizing:         border-box;
 	margin:             0;
 	padding:            0;
