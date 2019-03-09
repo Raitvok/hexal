@@ -47,12 +47,17 @@ body {
 	left:     3px;
 }
 
+.header__logo:hover {
+	transform: rotate(180deg);
+	transition: transform 1.5s;
+}
+
 .header__navigation {
 	display:         flex;
 	flex-flow:       row nowrap;
 	justify-content: center;
 	align-items:     center;
-	font-size:       .7rem;
+	font-size:       0.7rem;
 	text-transform:  uppercase;
 }
 
@@ -126,6 +131,16 @@ main {
 	transform:  rotate(120deg);
 	display:    inline-block;
 	margin:     0 7px;
+}
+
+.hexagon__portfolio {
+	transition: transform 1s;
+}
+
+.hexagon__portfolio:hover{
+	transform: scale(1.15) rotate(120deg);
+	transition: transform 1s;
+	filter: saturate(120%);
 }
 
 .hexagon__layer__1 {
@@ -534,5 +549,4 @@ input:invalid {
 .separator.--footer {
 	top:          -24px;
 	border-color: #2b2b2b;
-
 }
